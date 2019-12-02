@@ -90,9 +90,6 @@ const useStyles = makeStyles(theme => ({
     textAlign:'center',
     marginTop: '5vh',
     marginBottom: '5vh',
-    "a":{
-      textDecoration: 'none',
-    }
   },
 
   buttonElement:{
@@ -208,7 +205,9 @@ const useStyles = makeStyles(theme => ({
     listButtonIconsElement:{
       marginLeft: '10px',
   },
-
+  deleteUnderlining:{
+    textDecoration: 'none',
+  },
   //footer
 
   buttonElementFooter:{
@@ -250,7 +249,7 @@ export default function SimpleList() {
         <Container  className={classes.rootTop}>
 
           <Typography component="div" className={classes.icons}>
-            <a href="https://github.com/Hirq">
+            <a href="https://github.com/Hirq" >
               <FaGithub className={classes.iconsElement}/>
             </a>
             <a href="https://pl.linkedin.com/in/cezary-zabrocki/">
@@ -267,7 +266,7 @@ export default function SimpleList() {
 
             <Button size="small" className={classes.buttonElement}>Portfolio</Button>
 
-            <a href="https://drive.google.com/file/d/1DoQU7gAMd7n7Tp5tQcZrWERKTVwlxTA-/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1DoQU7gAMd7n7Tp5tQcZrWERKTVwlxTA-/view?usp=sharing" className={classes.deleteUnderlining}>
               <Button size="small" className={classes.buttonElement}>CV</Button>
             </a>
           </Typography>
