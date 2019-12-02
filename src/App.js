@@ -90,7 +90,7 @@ const useStyles = makeStyles(theme => ({
     textAlign:'center',
     marginTop: '5vh',
     marginBottom: '5vh',
-    a:{
+    "a":{
       textDecoration: 'none',
     }
   },
