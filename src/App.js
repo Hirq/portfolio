@@ -295,13 +295,13 @@ export default function SimpleList() {
                     Pierwsza moja aplikacja fullstack w całości zbudowana na bibliotece Django.
                   </div>
                   <div className={classes.listButton}>
-                    <a href="https://github.com/Hirq/Loquest">
+                    <a href="https://github.com/Hirq/Loquest" className={classes.deleteUnderlining}>
                       <Button size="small" className={classes.listButtonElement}>
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <a href="http://hirq.ct8.pl/">
+                    <a href="http://hirq.ct8.pl/" className={classes.deleteUnderlining}>
                     <Button size="small" className={classes.listButtonElement2}>
                     Online
                     <FaGgCircle className={classes.listButtonIconsElement}/>
@@ -329,16 +329,16 @@ export default function SimpleList() {
                     </div>   
                   </div>
                   <div className={classes.listDescribe}>
-                    Sklep internetowy z gitarami oraz efektami gitarowymi.
+                    Sklep internetowy z efektami gitarowymi.
                   </div>
                   <div className={classes.listButton}>
-                    <a href="https://github.com/Hirq/Shop/tree/onlyDjango">
+                    <a href="https://github.com/Hirq/Shop/tree/onlyDjango" className={classes.deleteUnderlining}>
                       <Button size="small" className={classes.listButtonElement}>
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <a href="http://hirq-shop.ct8.pl/">
+                    <a href="http://hirq-shop.ct8.pl/" className={classes.deleteUnderlining}>
                     <Button size="small" className={classes.listButtonElement2}>
                     Online
                     <FaGgCircle className={classes.listButtonIconsElement}/>
@@ -366,16 +366,16 @@ export default function SimpleList() {
                   <div className={classes.listDescribe}>
                   W trakcie produkcji.
                   <br/>
-                  Serwis gdzie programista się ogłsza, że szuka pracy.<br/>
+                  Serwis dla programistów do poszukiwania pracy.<br/>
                   </div>
                   <div className={classes.listButton}>
-                    <a href="https://github.com/Hirq/FindDev">
+                    <a href="https://github.com/Hirq/FindDev" className={classes.deleteUnderlining}>
                       <Button size="small" className={classes.listButtonElement}>
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <a href="XXX">
+                    <a href="XXX" className={classes.deleteUnderlining}>
                     <Button size="small" className={classes.listButtonElement2}>
                       view
                     <FaGgCircle className={classes.listButtonIconsElement}/>
@@ -407,13 +407,13 @@ export default function SimpleList() {
                     Apliakacja do nauki jezyka angielskiego. <br/>
                   </div>
                   <div className={classes.listButton}>
-                    <a href="https://github.com/Hirq/Woradd">
+                    <a href="https://github.com/Hirq/Woradd" className={classes.deleteUnderlining}>
                       <Button size="small" className={classes.listButtonElement}>
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <a href="XXX">
+                    <a href="XXX" className={classes.deleteUnderlining}>
                     <Button size="small" className={classes.listButtonElement2}>
                       view
                     <FaGgCircle className={classes.listButtonIconsElement}/>
@@ -438,10 +438,10 @@ export default function SimpleList() {
           </Button>
         </Typography>
         <Typography component="div" className={classes.footerIcons}>
-          <a href="https://github.com/Hirq/">
+          <a href="https://github.com/Hirq/" className={classes.deleteUnderlining}>
             <FaGithub className={classes.iconsElement}/>
           </a>
-          <a href="https://pl.linkedin.com/in/cezary-zabrocki/">
+          <a href="https://pl.linkedin.com/in/cezary-zabrocki/" className={classes.deleteUnderlining}>
             <FaLinkedin className={classes.iconsElement}/>
           </a>
         </Typography>
