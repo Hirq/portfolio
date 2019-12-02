@@ -90,6 +90,9 @@ const useStyles = makeStyles(theme => ({
     textAlign:'center',
     marginTop: '5vh',
     marginBottom: '5vh',
+    a:{
+      textDecoration: 'none',
+    }
   },
 
   buttonElement:{
@@ -261,9 +264,11 @@ export default function SimpleList() {
             Junior developer with basics react, angular and python.
           </Typography>
           <Typography component="h2" className={classes.buttons}>
+
             <Button size="small" className={classes.buttonElement}>Portfolio</Button>
+
             <a href="https://drive.google.com/file/d/1DoQU7gAMd7n7Tp5tQcZrWERKTVwlxTA-/view?usp=sharing">
-            <Button size="small" className={classes.buttonElement}>CV</Button>
+              <Button size="small" className={classes.buttonElement}>CV</Button>
             </a>
           </Typography>
         </Container>
