@@ -229,7 +229,7 @@ function ListItemLink(props) {
 
 function Redux() {
   // Import result is the URL of your image
-  return <img src={'/redux.png'} alt="Redux" style={{tintColor:'red', maxWidth:'15px'}}/>;
+  return <img src={'https://raw.githubusercontent.com/Hirq/portfolio/master/src/redux.png'} alt="Redux" style={{tintColor:'red', maxWidth:'15px'}}/>;
 }
 
 function LoquestZDJ() {
