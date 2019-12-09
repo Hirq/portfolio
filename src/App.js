@@ -241,7 +241,9 @@ const useStyles = makeStyles(theme => ({
     border: '2px solid #000',
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
-    width: '60rem',
+    width: '700px',
+    overflowY: 'scroll',
+    maxHeight: '100vh'
   },
 
   textInput:{
@@ -317,7 +319,7 @@ export default function SimpleList() {
   const handleClose = () => {
     setOpen(false);
   };
-  
+
   return (
     <React.Fragment>
       <CssBaseline />
@@ -559,7 +561,7 @@ export default function SimpleList() {
                   <div class="row">
                     <div class="col">
                       <div className={classes.divSubmit}>
-                        <a href="xxx">
+                        <a href="xxx" className={classes.deleteUnderlining}>
                           <Button size="small" className={classes.buttonSubmit}>
                             SUMBIT
                           </Button>
