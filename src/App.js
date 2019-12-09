@@ -17,6 +17,11 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { FaLinkedin, FaGithub, FaGgCircle } from "react-icons/fa";
 import { DiPython, DiDjango, DiHtml5, DiCss3, DiAngularSimple, DiSass, DiReact } from "react-icons/di";
+import Modal from '@material-ui/core/Modal';
+import Backdrop from '@material-ui/core/Backdrop';
+import Fade from '@material-ui/core/Fade';
+import TextField from '@material-ui/core/TextField';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 
 
 const useStyles = makeStyles(theme => ({
@@ -222,6 +227,68 @@ const useStyles = makeStyles(theme => ({
       color: '#20693C',
       borderRadius: '2vh',
     },
+  },
+  //// CONTACT
+
+  modal: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  paper: {
+    backgroundColor: theme.palette.background.paper,
+    border: '2px solid #000',
+    boxShadow: theme.shadows[5],
+    padding: theme.spacing(2, 4, 3),
+    width: '60rem',
+  },
+
+  textInput:{
+    width: '100%',
+    maxWidth:'30rem',
+    marginTop: 10,
+    marginBottom: 10,
+  },
+
+  textArea:{
+    marginTop: 15,
+    marginBottom: 10,
+    padding: 5,
+    width: '100%',
+    maxWidth:'60rem',
+    borderRadius: '1vh',
+    "&:focus": {
+      border: '1px solid #3449EF',
+      borderRadius: '1vh',
+    },
+  },
+
+  buttonSubmit:{
+    textAlign: 'center',
+    minWidth: '90px',
+    color: 'white',
+    backgroundColor: '#20693C',
+    border: '1px solid #fff', 
+    borderRadius: '1vh',
+    marginRight: '20px',
+    "&:hover": {
+      backgroundColor: '#fff',
+      color: '#20693C',
+      border: '1px solid #20693C',
+      borderRadius: '1vh',
+    },
+  },
+  divNameContactForm:{
+    textAlign: 'center',
+    fontSize: '30px',
+    border: '1px solid #20693C',
+    borderRadius: '10vh',
+    fontWeight: '800'
+  },
+
+  divSubmit:{
+    textAlign: 'center',
   },
 }));
 
@@ -433,9 +500,67 @@ export default function SimpleList() {
 
       <Container maxWidth="sm" className={classes.footer}>
         <Typography component="div" className={classes.footerButton}>
-          <Button size="small" className={classes.buttonElementFooter}>
+          <Button size="small" className={classes.buttonElementFooter} onClick={handleOpen}>
             Contact
           </Button>
+            <Modal
+              aria-labelledby="transition-modal-title"
+              aria-describedby="transition-modal-description"
+              className={classes.modal}
+              open={open}
+              onClose={handleClose}
+              closeAfterTransition
+              BackdropComponent={Backdrop}
+              BackdropProps={{
+                timeout: 500,
+              }}
+            >
+              <Fade in={open}>
+                <div className={classes.paper}>
+                  <div class="row">
+                    <div class="col">
+                      <div className={classes.divNameContactForm}>
+                        Contact Form
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput}/>
+                      <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}/>                     
+                    </div>
+                    <div class="col">
+                      <TextField required id="outlined-basic" label="Email" variant="outlined" className={classes.textInput}/>
+                      <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}/>                      
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <TextField
+                        required
+                        id="outlined-multiline-static"
+                        label="Message"
+                        multiline
+                        rows="3"
+                        variant="outlined"
+                        className={classes.textArea}
+                      />
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <div className={classes.divSubmit}>
+                        <a href="xxx">
+                          <Button size="small" className={classes.buttonSubmit}>
+                            SUMBIT
+                          </Button>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </Fade>
+            </Modal>
         </Typography>
         <Typography component="div" className={classes.footerIcons}>
           <a href="https://github.com/Hirq/" className={classes.deleteUnderlining}>
