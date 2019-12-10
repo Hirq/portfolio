@@ -242,7 +242,7 @@ const useStyles = makeStyles(theme => ({
     boxShadow: theme.shadows[5],
     padding: theme.spacing(2, 4, 3),
     width: '700px',
-    overflowY: 'scroll',
+    overflowY: 'auto',
     maxHeight: '100vh'
   },
 
@@ -289,6 +289,21 @@ const useStyles = makeStyles(theme => ({
     fontWeight: '800'
   },
 
+  closeContactForm:{
+    right: 0,
+    position: 'absolute',
+    fontSize: '35px',
+    marginRight: '-10px',
+    fontWeight: '500',
+    marginTop: '-5px',
+    "&:hover": {
+      backgroundColor: '#fff',
+      color: '#20693C',
+      fontWeight: '800',
+      marginTop: '-10px'
+    },
+  },
+   
   divSubmit:{
     textAlign: 'center',
   },
@@ -341,9 +356,9 @@ export default function SimpleList() {
             Junior developer with basics react, angular and python.
           </Typography>
           <Typography component="h2" className={classes.buttons}>
-
-            <Button size="small" className={classes.buttonElement}>Portfolio</Button>
-
+            <a href="#bottomContainer">
+              <Button size="small" className={classes.buttonElement}>Portfolio</Button>
+            </a>
             <a href="https://drive.google.com/file/d/1DoQU7gAMd7n7Tp5tQcZrWERKTVwlxTA-/view?usp=sharing" className={classes.deleteUnderlining}>
               <Button size="small" className={classes.buttonElement}>CV</Button>
             </a>
@@ -351,7 +366,7 @@ export default function SimpleList() {
         </Container>
       </Container>
       <Container className={classes.bottomContainer} >
-        <Typography component="div">
+        <Typography component="div" id="bottomContainer">
           <div className={classes.rootBottom}>
             <List component="nav" aria-label="main mailbox folders">
 
@@ -530,6 +545,11 @@ export default function SimpleList() {
                 <div className={classes.paper}>
                   <div class="row">
                     <div class="col">
+                      <div className={classes.closeContactForm}>
+                        <a  onClick={handleClose}>
+                          X
+                        </a>
+                      </div>
                       <div className={classes.divNameContactForm}>
                         Contact Form
                       </div>
