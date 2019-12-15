@@ -1,6 +1,5 @@
-
-
 import React from "react";
+import "./style.css"
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -243,7 +242,7 @@ const useStyles = makeStyles(theme => ({
     padding: theme.spacing(2, 4, 3),
     width: '700px',
     overflowY: 'auto',
-    maxHeight: '100vh'
+    maxHeight: '100vh', 
   },
 
   textInput:{
@@ -340,7 +339,6 @@ export default function SimpleList() {
       <CssBaseline />
       <Container maxWidth="sm" className={classes.topContainer}>
         <Container  className={classes.rootTop}>
-
           <Typography component="div" className={classes.icons}>
             <a href="https://github.com/Hirq" >
               <FaGithub className={classes.iconsElement}/>
@@ -369,9 +367,8 @@ export default function SimpleList() {
         <Typography component="div" id="bottomContainer">
           <div className={classes.rootBottom}>
             <List component="nav" aria-label="main mailbox folders">
-
               <ListItem button className={classes.list}>
-                <div className={classes.listContent}>
+                <div class="listContent">
                   <div className={classes.listHeader}>
                     <div className={classes.listName}>
                     Loquest
@@ -379,7 +376,6 @@ export default function SimpleList() {
                     <div className={classes.listIcons}>
                      <DiPython className={classes.listIconsElement}/>
                      <DiDjango className={classes.listIconsElementDjango}/>
-                   
                      <DiHtml5 className={classes.listIconsElement}/>
                      <DiCss3 className={classes.listIconsElement}/>
                     </div>   
@@ -395,16 +391,47 @@ export default function SimpleList() {
                       </Button>
                     </a>
                     <a href="http://hirq.ct8.pl/" className={classes.deleteUnderlining}>
-                    <Button size="small" className={classes.listButtonElement2}>
-                    Online
-                    <FaGgCircle className={classes.listButtonIconsElement}/>
-                    </Button>
+                      <Button size="small" className={classes.listButtonElement2}>
+                      Online
+                      <FaGgCircle className={classes.listButtonIconsElement}/>
+                      </Button>
                     </a>
                   </div>
                 </div>
-                <div className={classes.listPhoto}>
-                  ZDJ
+
+
+
+                <div class="listPhoto">
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="Second slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="Third slide"></img>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
                 </div>
+
+
+
               </ListItem>
 
               <ListItem button className={classes.list}>
@@ -416,7 +443,6 @@ export default function SimpleList() {
                     <div className={classes.listIcons}>
                      <DiPython className={classes.listIconsElement}/>
                      <DiDjango className={classes.listIconsElementDjango}/>
-                   
                      <DiHtml5 className={classes.listIconsElement}/>
                      <DiCss3 className={classes.listIconsElement}/>
                     </div>   
@@ -432,10 +458,10 @@ export default function SimpleList() {
                       </Button>
                     </a>
                     <a href="http://hirq-shop.ct8.pl/" className={classes.deleteUnderlining}>
-                    <Button size="small" className={classes.listButtonElement2}>
-                    Online
-                    <FaGgCircle className={classes.listButtonIconsElement}/>
-                    </Button>
+                      <Button size="small" className={classes.listButtonElement2}>
+                      Online
+                      <FaGgCircle className={classes.listButtonIconsElement}/>
+                      </Button>
                     </a>
                   </div>
                 </div>
@@ -468,19 +494,33 @@ export default function SimpleList() {
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <a href="XXX" className={classes.deleteUnderlining}>
-                    <Button size="small" className={classes.listButtonElement2}>
+                    <Button size="small" className={classes.listButtonElement2} data-toggle="modal" data-target="#FinddevModal">
                       view
-                    <FaGgCircle className={classes.listButtonIconsElement}/>
+                      <FaGgCircle className={classes.listButtonIconsElement}/>
                     </Button>
-                    </a>
+
+                    <div class="modal fade" id="FinddevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal22 title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            ...
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
                 <div className={classes.listPhoto}>
                   ZDJ
                 </div>
               </ListItem>
-
               <ListItem button className={classes.list}>
                 <div className={classes.listContent}>
                   <div className={classes.listHeader}>
@@ -506,24 +546,45 @@ export default function SimpleList() {
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <a href="XXX" className={classes.deleteUnderlining}>
-                    <Button size="small" className={classes.listButtonElement2}>
-                      view
-                    <FaGgCircle className={classes.listButtonIconsElement}/>
-                    </Button>
-                    </a>
+                      <Button size="small" className={classes.listButtonElement2} data-toggle="modal" data-target="#WoraddModal">
+                        view
+                      <FaGgCircle className={classes.listButtonIconsElement}/>
+                      </Button>
                   </div>
+
+                  
+                  <div class="modal fade" id="WoraddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
                 </div>
                 <div className={classes.listPhoto}>
                   ZDJ
                 </div>
               </ListItem>
-
             </List>
           </div>
         </Typography>
       </Container>
-
       <Container maxWidth="sm" className={classes.footer}>
         <Typography component="div" className={classes.footerButton}>
           <Button size="small" className={classes.buttonElementFooter} onClick={handleOpen}>
