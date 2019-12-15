@@ -1,5 +1,5 @@
 import React from "react";
-import "./style.css"
+import "./index.css"
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -385,13 +385,13 @@ export default function SimpleList() {
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/Loquest" className={classes.deleteUnderlining}>
-                      <Button size="small" className={classes.listButtonElement}>
+                      <Button size="small" class="listButtonElement">
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
                     <a href="http://hirq.ct8.pl/" className={classes.deleteUnderlining}>
-                      <Button size="small" className={classes.listButtonElement2}>
+                      <Button size="small" class="listButtonElement2">
                       Online
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                       </Button>
