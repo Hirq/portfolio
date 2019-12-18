@@ -499,17 +499,48 @@ export default function SimpleList() {
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                     </Button>
 
-                    <div class="modal fade" id="FinddevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog" role="document">
+                    <div class="modal fade bd-example-modal-lg" id="FinddevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
+
                           <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal22 title</h5>
+                            <h5 class="modal-title w-100  text-center" id="modal-header" >Add Worker</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                            ...
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Workers List</h5>
+                          </div>
+                          <div class="modal-body">
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Login</h5>
+                          </div>
+                          <div class="modal-body">
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Register</h5>
+                          </div>
+                          <div class="modal-body">
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Purpose</h5>
+                          </div>
+                          <div class="modal-body">
+                              <ul>
+                                <li>Map</li>
+                                <li>Subpage for company</li>
+                              </ul>
                           </div>
                         </div>
                       </div>
@@ -556,23 +587,45 @@ export default function SimpleList() {
                   <div class="modal fade" id="WoraddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          ...
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
+                        
+                          <div class="modal-header">
+                            <h5 class="modal-title w-100  text-center" id="modal-header" >Add word</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Words list</h5>
+                          </div>
+                          <div class="modal-body">
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Create note</h5>
+                          </div>
+                          <div class="modal-body">
+                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                          </div>
+
+                          <div class="modal-header">
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Purpose</h5>
+                          </div>
+                          <div class="modal-body">
+                              <ul>
+                                <li>Set diffucult word</li>
+                                <li>Calendar history of using time</li>
+                              </ul>
+                          </div>
+
+
                       </div>
                     </div>
                   </div>
-
 
 
 
