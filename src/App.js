@@ -151,9 +151,8 @@ const useStyles = makeStyles(theme => ({
 
   listPhoto:{
     minWidth: '30%',
-    backgroundImage: `url(${'https://i.vimeocdn.com/portrait/9798022_300x300'})`,
     minHeight: '200px',
-    maxHeight: '100px',
+    maxHeight: '200px',
   },
   listHeader:{
   },
@@ -367,6 +366,7 @@ export default function SimpleList() {
         <Typography component="div" id="bottomContainer">
           <div className={classes.rootBottom}>
             <List component="nav" aria-label="main mailbox folders">
+
               <ListItem button className={classes.list}>
                 <div class="listContent">
                   <div className={classes.listHeader}>
@@ -471,7 +471,7 @@ export default function SimpleList() {
               </ListItem>
 
               <ListItem button className={classes.list}>
-                <div className={classes.listContent}>
+                <div class="listContent">
                   <div className={classes.listHeader}>
                     <div className={classes.listName}>
                       FindDev
@@ -489,13 +489,13 @@ export default function SimpleList() {
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/FindDev" className={classes.deleteUnderlining}>
-                      <Button size="small" className={classes.listButtonElement}>
+                      <Button size="small"  class="listButtonElement">
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                    <Button size="small" className={classes.listButtonElement2} data-toggle="modal" data-target="#FinddevModal">
-                      view
+                    <Button size="small"  class="listButtonElement2" data-toggle="modal" data-target="#FinddevModal">
+                      View
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                     </Button>
 
@@ -510,28 +510,28 @@ export default function SimpleList() {
                             </button>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev1.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
-                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Workers List</h5>
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">List</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev2.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Login</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev3.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Register</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev4.png" alt="First slide"></img>
                           </div>
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Purpose</h5>
@@ -548,13 +548,43 @@ export default function SimpleList() {
                     
                   </div>
                 </div>
-                <div className={classes.listPhoto}>
-                  ZDJ
+                <div class="listPhoto">
+                  <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" >
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev1.png" alt="First slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev2.png" alt="Second slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev3.png" alt="Third slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev4.png" alt="Third slide"></img>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
                 </div>
               </ListItem>
+
+
               <ListItem button className={classes.list}>
-                <div className={classes.listContent}>
-                  <div className={classes.listHeader}>
+                  <div class="listContent">
+                    <div className={classes.listHeader}>
                     <div className={classes.listName}>
                       Woradd
                     </div>
@@ -572,13 +602,13 @@ export default function SimpleList() {
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/Woradd" className={classes.deleteUnderlining}>
-                      <Button size="small" className={classes.listButtonElement}>
+                      <Button size="small"  class="listButtonElement">
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
-                      <Button size="small" className={classes.listButtonElement2} data-toggle="modal" data-target="#WoraddModal">
-                        view
+                      <Button size="small" class="listButtonElement2" data-toggle="modal" data-target="#WoraddModal">
+                        View
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                       </Button>
                   </div>
@@ -589,27 +619,27 @@ export default function SimpleList() {
                       <div class="modal-content">
                         
                           <div class="modal-header">
-                            <h5 class="modal-title w-100  text-center" id="modal-header" >Add word</h5>
+                            <h5 class="modal-title w-100  text-center" id="modal-header" >Add word & Words list</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word1.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
-                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Words list</h5>
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Create note & Note List</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word2.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
-                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Create note</h5>
+                            <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">View Note</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word3.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
@@ -630,29 +660,32 @@ export default function SimpleList() {
 
 
                 </div>
-                <div className={classes.listPhoto}>
-                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="listPhoto">
+                  <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
-                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
                     </ol>
                     <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                      <div class="carousel-item active" >
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word1.png" alt="First slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="Second slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word2.png" alt="Second slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="Third slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word3.png" alt="Third slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word5.png" alt="Third slide"></img>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -663,9 +696,6 @@ export default function SimpleList() {
           </div>
         </Typography>
       </Container>
-
-
-
 
       <Container maxWidth="sm" className={classes.footer}>
         <Typography component="div" className={classes.footerButton}>
