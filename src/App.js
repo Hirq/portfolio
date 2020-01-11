@@ -432,7 +432,7 @@ export default function SimpleList() {
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log4.png" alt="Five slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log5.png" alt="Six slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log01.png" alt="Six slide"></img>
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log6.png" alt="Seven slide"></img>
@@ -554,28 +554,28 @@ export default function SimpleList() {
                             </button>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev1.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev11.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">List</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev2.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev22.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Login</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev3.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev33.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Register</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev4.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev44.png" alt="First slide"></img>
                           </div>
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Purpose</h5>
@@ -602,16 +602,16 @@ export default function SimpleList() {
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active" >
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev1.png" alt="First slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev11.png" alt="First slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev2.png" alt="Second slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev22.png" alt="Second slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev3.png" alt="Third slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev33.png" alt="Third slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev4.png" alt="Four slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev44.png" alt="Four slide"></img>
                       </div>
                     </div>
                     <a class="carousel-control-prev" id="carouselArrowsBlack" href="#carouselExampleIndicators3" role="button" data-slide="prev">
@@ -670,21 +670,21 @@ export default function SimpleList() {
                             </button>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word1.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word11.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Create note & Note List</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word2.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word22.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">View Note</h5>
                           </div>
                           <div class="modal-body">
-                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word3.png" alt="First slide"></img>
+                              <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word33.png" alt="First slide"></img>
                           </div>
 
                           <div class="modal-header">
