@@ -263,3 +263,7 @@ code {
     background-color: #fff;
     color: #20693C;
 }
+
+#carouselArrowsBlack{
+  filter: invert(100%);
+}

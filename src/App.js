@@ -209,7 +209,7 @@ const useStyles = makeStyles(theme => ({
       marginLeft: '10px',
   },
   deleteUnderlining:{
-    textDecoration: 'none',
+    textDecoration: 'none !important' ,
   },
   //footer
 
@@ -250,7 +250,10 @@ const useStyles = makeStyles(theme => ({
     marginTop: 10,
     marginBottom: 10,
   },
-
+  notchedOutline: {
+    borderWidth: "1px",
+    borderColor: "#20693C !important"
+  },
   textArea:{
     marginTop: 15,
     marginBottom: 10,
@@ -407,16 +410,32 @@ export default function SimpleList() {
                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="First slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log0.png" alt="First slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="Second slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log1.png" alt="Second slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://miro.medium.com/max/5920/1*AiVwCy6dXORN0j-0i9Jw5w.png" alt="Third slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log2.png" alt="Third slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log3.png" alt="Four slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log4.png" alt="Five slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log5.png" alt="Six slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log6.png" alt="Seven slide"></img>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -435,7 +454,7 @@ export default function SimpleList() {
               </ListItem>
 
               <ListItem button className={classes.list}>
-                <div className={classes.listContent}>
+                <div class="listContent">
                   <div className={classes.listHeader}>
                     <div className={classes.listName}>
                       Majshop
@@ -452,21 +471,46 @@ export default function SimpleList() {
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/Shop/tree/onlyDjango" className={classes.deleteUnderlining}>
-                      <Button size="small" className={classes.listButtonElement}>
+                      <Button size="small" class="listButtonElement">
                       GitHub
                       <FaGithub className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
                     <a href="http://hirq-shop.ct8.pl/" className={classes.deleteUnderlining}>
-                      <Button size="small" className={classes.listButtonElement2}>
+                      <Button size="small" class="listButtonElement2">
                       Online
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                       </Button>
                     </a>
                   </div>
                 </div>
-                <div className={classes.listPhoto}>
-                  zdj
+                <div class="listPhoto">
+                  <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators" id="carouselArrowsBlack">
+                      <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" >
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/shop2.png" alt="First slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/shop1.png" alt="Second slide"></img>
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/shop3.png" alt="Third slide"></img>
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" id="carouselArrowsBlack" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" id="carouselArrowsBlack" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
                 </div>
               </ListItem>
 
@@ -550,10 +594,11 @@ export default function SimpleList() {
                 </div>
                 <div class="listPhoto">
                   <div id="carouselExampleIndicators3" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators" id="carouselArrowsBlack">
                       <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
                       <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators3" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active" >
@@ -566,14 +611,14 @@ export default function SimpleList() {
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev3.png" alt="Third slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev4.png" alt="Third slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev4.png" alt="Four slide"></img>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" id="carouselArrowsBlack" href="#carouselExampleIndicators3" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                    <a class="carousel-control-next" id="carouselArrowsBlack" href="#carouselExampleIndicators3" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -662,10 +707,11 @@ export default function SimpleList() {
                 </div>
                 <div class="listPhoto">
                   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators" id="carouselArrowsBlack">
                       <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                       <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
                       <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                      <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active" >
@@ -681,11 +727,11 @@ export default function SimpleList() {
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word5.png" alt="Third slide"></img>
                       </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" id="carouselArrowsBlack" href="#carouselExampleIndicators2" role="button" data-slide="prev">
                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                       <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                    <a class="carousel-control-next" id="carouselArrowsBlack" href="#carouselExampleIndicators2" role="button" data-slide="next">
                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -730,12 +776,17 @@ export default function SimpleList() {
                   </div>
                   <div class="row">
                     <div class="col">
-                      <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput}/>
-                      <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}/>                     
+                      <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput} 
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
+                      <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
+                     
                     </div>
                     <div class="col">
-                      <TextField required id="outlined-basic" label="Email" variant="outlined" className={classes.textInput}/>
-                      <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}/>                      
+                      <TextField required id="outlined-basic" label="Email" variant="outlined" className={classes.textInput}
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
+                      <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
                     </div>
                   </div>
                   <div class="row">
@@ -748,11 +799,11 @@ export default function SimpleList() {
                         rows="3"
                         variant="outlined"
                         className={classes.textArea}
-                      />
+                        InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="col">
+                    <div class="col ">
                       <div className={classes.divSubmit}>
                         <a href="xxx" className={classes.deleteUnderlining}>
                           <Button size="small" className={classes.buttonSubmit}>
