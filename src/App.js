@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component, useEffect, useRef } from "react";
 import "./index.css"
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
@@ -21,6 +21,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import TextField from '@material-ui/core/TextField';
 import TextareaAutosize from '@material-ui/core/TextareaAutosize';
+import Contact from './Contact';
 
 
 const useStyles = makeStyles(theme => ({
@@ -319,11 +320,6 @@ function Redux() {
   return <img src={'https://raw.githubusercontent.com/Hirq/portfolio/master/src/redux.png'} alt="Redux" style={{tintColor:'red', maxWidth:'15px'}}/>;
 }
 
-function LoquestZDJ() {
-  // Import result is the URL of your image
-  return <img src={'https://lh3.googleusercontent.com/RivvntB-z-qe59FF0j9bxy6tBXZCnksHIz_EvXvaSKa039MC9IwZLTORIirdJcZZcE8'} alt="Redux" style={{tintColor:'red', }}/>;
-}
-
 export default function SimpleList() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
@@ -339,6 +335,9 @@ export default function SimpleList() {
   return (
     <React.Fragment>
       <CssBaseline />
+      
+      <Contact />
+
       <Container maxWidth="sm" className={classes.topContainer}>
         <Container  className={classes.rootTop}>
           <Typography component="div" className={classes.icons}>
@@ -356,7 +355,7 @@ export default function SimpleList() {
             Junior developer with basics react, angular and python.
           </Typography>
           <Typography component="h2" className={classes.buttons}>
-            <a href="#bottomContainer">
+            <a href="#bottomContainer" >
               <Button size="small" className={classes.buttonElement}>Portfolio</Button>
             </a>
             <a href="https://drive.google.com/file/d/1DoQU7gAMd7n7Tp5tQcZrWERKTVwlxTA-/view?usp=sharing" className={classes.deleteUnderlining}>
@@ -402,8 +401,6 @@ export default function SimpleList() {
                   </div>
                 </div>
 
-
-
                 <div class="listPhoto">
                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -413,7 +410,6 @@ export default function SimpleList() {
                       <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
                       <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-                      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -426,16 +422,13 @@ export default function SimpleList() {
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log2.png" alt="Third slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log3.png" alt="Four slide"></img>
-                      </div>
-                      <div class="carousel-item">
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log4.png" alt="Five slide"></img>
                       </div>
                       <div class="carousel-item">
                         <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log01.png" alt="Six slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log6.png" alt="Seven slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/log66.png" alt="Seven slide"></img>
                       </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -448,8 +441,6 @@ export default function SimpleList() {
                     </a>
                   </div>
                 </div>
-
-
 
               </ListItem>
 
@@ -662,7 +653,6 @@ export default function SimpleList() {
                   <div class="modal fade" id="WoraddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
-                        
                           <div class="modal-header">
                             <h5 class="modal-title w-100  text-center" id="modal-header" >Add word & Words list</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -696,8 +686,6 @@ export default function SimpleList() {
                                 <li>Calendar history of using time</li>
                               </ul>
                           </div>
-
-
                       </div>
                     </div>
                   </div>
@@ -715,16 +703,16 @@ export default function SimpleList() {
                     </ol>
                     <div class="carousel-inner">
                       <div class="carousel-item active" >
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word1.png" alt="First slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word11.png" alt="First slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word2.png" alt="Second slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word22.png" alt="Second slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word3.png" alt="Third slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word33.png" alt="Third slide"></img>
                       </div>
                       <div class="carousel-item">
-                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word5.png" alt="Third slide"></img>
+                        <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word55.png" alt="Third slide"></img>
                       </div>
                     </div>
                     <a class="carousel-control-prev" id="carouselArrowsBlack" href="#carouselExampleIndicators2" role="button" data-slide="prev">
@@ -762,6 +750,7 @@ export default function SimpleList() {
             >
               <Fade in={open}>
                 <div className={classes.paper}>
+                  <form>
                   <div class="row">
                     <div class="col">
                       <div className={classes.closeContactForm}>
@@ -777,16 +766,22 @@ export default function SimpleList() {
                   <div class="row">
                     <div class="col">
                       <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput} 
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
+
+                      />
                       <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
-                     
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
+                      
+                      />
                     </div>
                     <div class="col">
                       <TextField required id="outlined-basic" label="Email" variant="outlined" className={classes.textInput}
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
+                      />
                       <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
+                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
+                      
+                      />
                     </div>
                   </div>
                   <div class="row">
@@ -799,6 +794,7 @@ export default function SimpleList() {
                         rows="3"
                         variant="outlined"
                         className={classes.textArea}
+
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
                     </div>
                   </div>
@@ -813,6 +809,7 @@ export default function SimpleList() {
                       </div>
                     </div>
                   </div>
+                  </form>
                 </div>
               </Fade>
             </Modal>
