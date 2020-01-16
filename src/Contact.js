@@ -27,18 +27,24 @@ class Contact extends Component{
 
         const { name, title, email, phone, message } = this.state;
 
-        const form = await axios.post('/api/form', {
-            name,
-            title,
-            email,
-            phone,
-            message
+        const form = await axios.post('https://formspree.io/mayedqbl', {
+            name: "",
+            title: "",
+            email: "",
+            phone: "",
+            message: ""
         })
+        .then(response => { 
+            console.log(response)
+        })
+        .catch(error => {
+            console.log(error.response)
+        });
     }
 
     render() {
         return (
-            <Form onSubmit={this.handleSubmit}>
+            <Form onSubmit={this.handleSubmit} method="POST">
                 <FormGroup>
                     <Label for="name">Name:</Label>
                     <Input
@@ -79,7 +85,7 @@ class Contact extends Component{
                     onChange={this.handleChange}>
                     </Input>
                 </FormGroup>
-                <Button>Submit</Button>
+                <Button >Submit</Button>
             </Form>
         );
     }

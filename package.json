@@ -1,13 +1,22 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "secure":false,
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "https://http://localhost:5000/",
+  "homepage": "https://hirq.github.io/portfolio",
+  "main": "index2.js",
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
     "axios": "^0.19.1",
+    "body-parser": "^1.19.0",
     "bootstrap": "^3.4.1",
+    "concurrently": "^5.0.2",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.4.2",
+    "nodemon": "^2.0.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.8.0",
@@ -16,11 +25,14 @@
     "save": "^2.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-scripts start && node index2.js ",
+    "build": "react-scripts build ",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d dist"
+    "server": "nodemon index2.js",
+    "predeploy": " npm run build ",
+    "deploy": "  gh-pages -d build",
+    "dev": "concurrently \"npm run server\" \"npm run start\""
   },
   "eslintConfig": {
     "extends": "react-app"
