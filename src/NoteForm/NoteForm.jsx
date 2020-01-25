@@ -1,8 +1,8 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 import './NoteForm.css';
 import { withStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
+import CustomizedSnackbars from './Snackbar';
 
 const styles = theme => ({
 
@@ -85,6 +85,10 @@ const styles = theme => ({
        
       divSubmit:{
         textAlign: 'center',
+      },
+
+      deleteUnderlining:{
+        textDecoration: 'none !important' ,
       },
   
   });
@@ -200,13 +204,11 @@ class NoteForm extends Component{
                 </div>
                 <div class="row">
                     <div class="col ">
-                    <div className={classes.divSubmit}>
-                        <a href="/" className={classes.deleteUnderlining} onClick={this.writeNote}>
-                        <Button size="small" className={classes.buttonSubmit} >
-                            SUMBIT
-                        </Button>
-                        </a>
-                    </div>
+                        <div className={classes.divSubmit}>
+                            <a href="/" className={classes.deleteUnderlining} onClick={this.writeNote}>
+                                <CustomizedSnackbars />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

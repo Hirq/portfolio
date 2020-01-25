@@ -1,26 +1,17 @@
-import React, { Component, useEffect, useRef } from "react";
+import React from "react";
 import "./index.css"
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListItemIcon from "@material-ui/core/ListItemIcon";
-import ListItemText from "@material-ui/core/ListItemText";
-import InboxIcon from "@material-ui/icons/Inbox";
-import DraftsIcon from "@material-ui/icons/Drafts";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import { FaLinkedin, FaGithub, FaGgCircle } from "react-icons/fa";
 import { DiPython, DiDjango, DiHtml5, DiCss3, DiAngularSimple, DiSass, DiReact } from "react-icons/di";
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import TextField from '@material-ui/core/TextField';
-import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 import Contact from './Contact';
 
 
@@ -270,10 +261,6 @@ const useStyles = makeStyles(theme => ({
 
 }));
 
-function ListItemLink(props) {
-  return <ListItem button component="a" {...props} />;
-}
-
 function Redux() {
   // Import result is the URL of your image
   return <img src={'https://raw.githubusercontent.com/Hirq/portfolio/master/src/redux.png'} alt="Redux" style={{tintColor:'red', maxWidth:'15px'}}/>;
@@ -291,10 +278,12 @@ export default function SimpleList() {
     setOpen(false);
   };
 
+
+
+
   return (
     <React.Fragment>
       <CssBaseline />
-      
       <Container maxWidth="sm" className={classes.topContainer}>
         <Container  className={classes.rootTop}>
           <Typography component="div" className={classes.icons}>
@@ -312,7 +301,7 @@ export default function SimpleList() {
             Junior developer with basics react, angular and python.
           </Typography>
           <Typography component="h2" className={classes.buttons}>
-            <a href="#bottomContainer" >
+            <a href="#bottomContainer" className={classes.deleteUnderlining}>
               <Button size="small" className={classes.buttonElement}>Portfolio</Button>
             </a>
             <a href="https://drive.google.com/file/d/1DoQU7gAMd7n7Tp5tQcZrWERKTVwlxTA-/view?usp=sharing" className={classes.deleteUnderlining}>
@@ -710,10 +699,8 @@ export default function SimpleList() {
                   <form>
                   <div class="row">
                       <div class="col">
-                      <div className={classes.closeContactForm}>
-                          <a  onClick={handleClose}>
+                      <div className={classes.closeContactForm} onClick={handleClose}>
                           X
-                          </a>
                       </div>
                       <div className={classes.divNameContactForm}>
                           Contact Form
@@ -722,7 +709,7 @@ export default function SimpleList() {
                   </div>
                   <Contact/> 
                 </form>
-              </div>
+                </div>
               </Fade>
             </Modal>
         </Typography>
