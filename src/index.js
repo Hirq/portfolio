@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import Message from './Message';
-import Contact from './Contact';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

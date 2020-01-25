@@ -245,44 +245,6 @@ const useStyles = makeStyles(theme => ({
     maxHeight: '100vh', 
   },
 
-  textInput:{
-    width: '100%',
-    maxWidth:'30rem',
-    marginTop: 10,
-    marginBottom: 10,
-  },
-  notchedOutline: {
-    borderWidth: "1px",
-    borderColor: "#20693C !important"
-  },
-  textArea:{
-    marginTop: 15,
-    marginBottom: 10,
-    padding: 5,
-    width: '100%',
-    maxWidth:'60rem',
-    borderRadius: '1vh',
-    "&:focus": {
-      border: '1px solid #3449EF',
-      borderRadius: '1vh',
-    },
-  },
-
-  buttonSubmit:{
-    textAlign: 'center',
-    minWidth: '90px',
-    color: 'white',
-    backgroundColor: '#20693C',
-    border: '1px solid #fff', 
-    borderRadius: '1vh',
-    marginRight: '20px',
-    "&:hover": {
-      backgroundColor: '#fff',
-      color: '#20693C',
-      border: '1px solid #20693C',
-      borderRadius: '1vh',
-    },
-  },
   divNameContactForm:{
     textAlign: 'center',
     fontSize: '30px',
@@ -305,10 +267,7 @@ const useStyles = makeStyles(theme => ({
       marginTop: '-10px'
     },
   },
-   
-  divSubmit:{
-    textAlign: 'center',
-  },
+
 }));
 
 function ListItemLink(props) {
@@ -335,8 +294,6 @@ export default function SimpleList() {
   return (
     <React.Fragment>
       <CssBaseline />
-      
-      <Contact />
       
       <Container maxWidth="sm" className={classes.topContainer}>
         <Container  className={classes.rootTop}>
@@ -752,65 +709,20 @@ export default function SimpleList() {
                 <div className={classes.paper}>
                   <form>
                   <div class="row">
-                    <div class="col">
+                      <div class="col">
                       <div className={classes.closeContactForm}>
-                        <a  onClick={handleClose}>
+                          <a  onClick={handleClose}>
                           X
-                        </a>
+                          </a>
                       </div>
                       <div className={classes.divNameContactForm}>
-                        Contact Form
+                          Contact Form
                       </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput} 
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
-
-                      />
-                      <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
-                      
-                      />
-                    </div>
-                    <div class="col">
-                      <TextField required id="outlined-basic" label="Email" variant="outlined" className={classes.textInput}
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
-                      />
-                      <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}
-                      InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
-                      
-                      />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                      <TextField
-                        required
-                        id="outlined-multiline-static"
-                        label="Message"
-                        multiline
-                        rows="3"
-                        variant="outlined"
-                        className={classes.textArea}
-
-                        InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}/>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col ">
-                      <div className={classes.divSubmit}>
-                        <a href="xxx" className={classes.deleteUnderlining}>
-                          <Button size="small" className={classes.buttonSubmit}>
-                            SUMBIT
-                          </Button>
-                        </a>
                       </div>
-                    </div>
                   </div>
-                  </form>
-                </div>
+                  <Contact/> 
+                </form>
+              </div>
               </Fade>
             </Modal>
         </Typography>

@@ -80,9 +80,6 @@ class Contact extends Component{
       }
 
 
-
-
-
     handleChange(e){
         this.setState({[e.target.name] : e.target.value});
     }
@@ -111,83 +108,12 @@ class Contact extends Component{
       render() {
         return (
           <div className="notesWrapper">
-          <div className="notesBody">
-            {
-              this.state.notes.map((note) => {
-                return (
-                  <Note1 
-                  messageName={note.messageName} 
-                  messageTitle={note.messageTitle}
-                  messageEmail={note.messageEmail}
-                  messagePhone={note.messagePhone}
-                  messageText={note.messageText}
-
-                  noteId={note.id} 
-                  key={note.id} 
-                  removeNote ={this.removeNote}/>
-                )
-              })
-            }
-          </div>
           <div className="notesFooter">
             <NoteForm addNote={this.addNote} />
           </div>
         </div>
-
         );
       }
 }
 
 export default Contact;
-
-  /*       
-
-
-        <Form onSubmit={this.handleSubmit} >
-        <FormGroup>
-            <Label for="name">Name:</Label>
-            <Input
-            type="text"
-            name="name"
-            onChange={this.handleChange}>
-            </Input>
-        </FormGroup>
-        <FormGroup>
-            <Label for="title">Title:</Label>
-            <Input
-            type="text"
-            name="title"
-            onChange={this.handleChange}>
-            </Input>
-        </FormGroup>
-        <FormGroup>
-            <Label for="email">Email:</Label>
-            <Input
-            type="email"
-            name="email"
-            onChange={this.handleChange}>
-            </Input>
-        </FormGroup>
-        <FormGroup>
-            <Label for="phone">Phone:</Label>
-            <Input
-            type="text"
-            name="phone"
-            onChange={this.handleChange}>
-            </Input>
-        </FormGroup>
-        <FormGroup>
-            <Label for="message">Message:</Label>
-            <Input
-            type="textarea"
-            name="message"
-            onChange={this.handleChange}>
-            </Input>
-        </FormGroup>
-        <Button >Submit</Button>
-        </Form>
-
-
-
-
-        */

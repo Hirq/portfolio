@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "secure": false,
   "private": true,
-  "proxy": "http://localhost:4500/",
   "homepage": "https://hirq.github.io/portfolio",
   "main": "index2.js",
   "dependencies": {
