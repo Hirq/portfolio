@@ -8,7 +8,7 @@ const app = express()
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false}))
 
-app.post('https://formspree.io/mayedqbl', (req, res) => {
+app.post('/api/form', (req, res) => {
     console.log(req.body);
 
     nodemailer.createTestAccount((err, account) => {
@@ -44,7 +44,7 @@ app.post('https://formspree.io/mayedqbl', (req, res) => {
     });
 });
 
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 4500
 
 app.listen(PORT, () => {
     console.log('Server listening on port '+ PORT )
