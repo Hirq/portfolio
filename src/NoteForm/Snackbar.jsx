@@ -13,7 +13,9 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
     '& > * + *': {
       marginTop: theme.spacing(2),
+      textDecoration: 'none !important' ,
     },
+    padding: '5px',
   },
   buttonSubmit:{
     textAlign: 'center',
@@ -30,6 +32,15 @@ const useStyles = makeStyles(theme => ({
       borderRadius: '1vh',
     },
   },
+  submit:{
+    width:'100%',
+    height:'100%',
+    textDecoration: 'none !important' ,
+    color: 'inherit',
+    "&:hover": {
+      color: 'inherit',
+    },
+  }
 }));
 
 export default function CustomizedSnackbars() {
@@ -48,8 +59,8 @@ export default function CustomizedSnackbars() {
   };
 
   return (
-    <div className={classes.root}>
-      <a variant="outlined" onClick={handleClick} >
+    <div className={classes.root} onClick={handleClick}>
+      <a className={classes.submit} href="/portfolio">
         Submit
       </a>
       <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>

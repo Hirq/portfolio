@@ -101,11 +101,15 @@ const styles = theme => ({
         border: '1px solid #fff', 
         borderRadius: '1vh',
         marginRight: '20px',
+        textDecoration: 'none !important' ,
+        padding: '0',
         "&:hover": {
           backgroundColor: '#fff',
           color: '#20693C',
           border: '1px solid #20693C',
           borderRadius: '1vh',
+          textDecoration: 'none !important' ,
+          padding: '0',
         },
        },
   });
@@ -182,7 +186,6 @@ class NoteForm extends Component{
         const { classes } = this.props;
         const isEnabled =  this.state.newNameContent.length > 0 &&  this.state.newTitleContent.length > 0 && this.state.newMessageContent.length > 0 && this.state.newEmailContent.length > 0 
 
-
         return(
             <div>
                 <div class="row">
@@ -190,12 +193,10 @@ class NoteForm extends Component{
                         <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput} 
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newNameContent} onChange={this.handleNameInput}
-                        
                         />
                         <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newTitleContent} onChange={this.handleTitleInput}
-                        
                         />
                         </div>
                         <div class="col">
@@ -203,7 +204,6 @@ class NoteForm extends Component{
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newEmailContent} onChange={this.handleEmailInput}
                         required
-
                         />
                         <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
@@ -230,11 +230,9 @@ class NoteForm extends Component{
                 <div class="row">
                     <div class="col ">
                         <div className={classes.divSubmit}>
-                            <a className={classes.deleteUnderlining} onClick={this.writeNote} href="/">
-                                <Button disabled={!isEnabled} className={classes.buttonSubmit}>
-                                    < CustomizedSnackbars />
+                                <Button disabled={!isEnabled} className={classes.buttonSubmit} onClick={this.writeNote}>
+                                 < CustomizedSnackbars />
                                 </Button>
-                            </a>
                         </div>
                     </div>
                 </div>
