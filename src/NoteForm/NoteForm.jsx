@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import './NoteForm.css';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import CustomizedSnackbars from './Snackbar';
+import Button from '@material-ui/core/Button';
+import CustomizedSnackbars from './Snackbar'
+
 
 const styles = theme => ({
 
@@ -91,6 +93,21 @@ const styles = theme => ({
         textDecoration: 'none !important' ,
       },
   
+      buttonSubmit:{
+        textAlign: 'center',
+        minWidth: '90px',
+        color: 'white',
+        backgroundColor: '#20693C',
+        border: '1px solid #fff', 
+        borderRadius: '1vh',
+        marginRight: '20px',
+        "&:hover": {
+          backgroundColor: '#fff',
+          color: '#20693C',
+          border: '1px solid #20693C',
+          borderRadius: '1vh',
+        },
+       },
   });
 
 class NoteForm extends Component{
@@ -160,9 +177,12 @@ class NoteForm extends Component{
             newMessageContent: '',
         })
     }
-
+    
     render(){
         const { classes } = this.props;
+        const isEnabled =  this.state.newNameContent.length > 0 &&  this.state.newTitleContent.length > 0 && this.state.newMessageContent.length > 0 && this.state.newEmailContent.length > 0 
+
+
         return(
             <div>
                 <div class="row">
@@ -170,20 +190,25 @@ class NoteForm extends Component{
                         <TextField required id="outlined-basic" label="Name" variant="outlined" className={classes.textInput} 
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newNameContent} onChange={this.handleNameInput}
+                        
                         />
                         <TextField required id="outlined-basic" label="Title" variant="outlined" className={classes.textInput}
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newTitleContent} onChange={this.handleTitleInput}
+                        
                         />
                         </div>
                         <div class="col">
                         <TextField required id="outlined-basic" label="Email" variant="outlined" className={classes.textInput}
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newEmailContent} onChange={this.handleEmailInput}
+                        required
+
                         />
                         <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newPhoneContent} onChange={this.handlePhoneInput}
+                        type="number"
                         />
                     </div>
                 </div>
@@ -205,8 +230,10 @@ class NoteForm extends Component{
                 <div class="row">
                     <div class="col ">
                         <div className={classes.divSubmit}>
-                            <a href="/" className={classes.deleteUnderlining} onClick={this.writeNote}>
-                                <CustomizedSnackbars />
+                            <a className={classes.deleteUnderlining} onClick={this.writeNote} href="/">
+                                <Button disabled={!isEnabled} className={classes.buttonSubmit}>
+                                    < CustomizedSnackbars />
+                                </Button>
                             </a>
                         </div>
                     </div>

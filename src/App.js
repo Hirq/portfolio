@@ -278,9 +278,6 @@ export default function SimpleList() {
     setOpen(false);
   };
 
-
-
-
   return (
     <React.Fragment>
       <CssBaseline />
