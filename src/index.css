@@ -17,7 +17,6 @@ code {
     position: relative;
     width: 100%;
     text-align: right;
-    background-color: red;
     margin-top: 210px;
   }
 
@@ -37,7 +36,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: yellow;
     margin-top: 185px;
   }
 
@@ -46,7 +44,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: blue;
     margin-top: 165px;
   }
 
@@ -55,7 +52,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: green;
     margin-top: 145px;
   }
 
@@ -65,7 +61,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: white;
     margin-top: 125px;
   }
 
@@ -74,7 +69,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: red;
     margin-top: 110px;
   }
 
@@ -83,7 +77,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: blue;
     margin-top: 85px;
   }
   .listButtonElement{
@@ -104,7 +97,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: red;
     margin-top: 75px;
   }
   .listButtonElement2{
@@ -118,7 +110,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: green;
     margin-top: 60px;
   }
   .listButtonElement{
@@ -139,7 +130,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: orange;
     margin-top: 60px;
   }
   .listButtonElement{
@@ -160,7 +150,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: white;
     margin-top: 50px;
   }
   .listButtonElement{
@@ -180,7 +169,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: aqua;
     margin-top: 50px;
   }
   .listButtonElement{
@@ -200,7 +188,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: red;
     margin-top: 30px;
   }
 }
@@ -209,7 +196,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: yellow;
     margin-top: 20px;
   }
 }
@@ -218,7 +204,6 @@ code {
   .listContent{
     width: 100%;
     text-align: right;
-    background-color: white;
     margin-top: 30px;
   }
 }
