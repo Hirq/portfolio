@@ -59,10 +59,9 @@ export default function CustomizedSnackbars() {
   };
 
   return (
-    <div className={classes.root} onClick={handleClick}>
-      <a className={classes.submit} href="/portfolio">
+    <a className={classes.submit} href="/portfolio">
+    <div className={classes.root} onClick={handleClick} >
         Submit
-      </a>
       <Snackbar open={open} autoHideDuration={2000} onClose={handleClose}>
         <Alert 
          onClose={handleClose} severity="success">
@@ -70,5 +69,6 @@ export default function CustomizedSnackbars() {
         </Alert>
       </Snackbar>
     </div>
+    </a>
   );
 }
