@@ -208,7 +208,7 @@ class NoteForm extends Component{
                         <TextField id="outlined-basic" label="Phone" variant="outlined" className={classes.textInput}
                         InputLabelProps={{ style: { color: '#20693C' }}} InputProps={{ classes: { notchedOutline: classes.notchedOutline }}}
                         value={this.state.newPhoneContent} onChange={this.handlePhoneInput}
-                        type="number"
+                        type="number" 
                         />
                     </div>
                 </div>

@@ -311,7 +311,6 @@ export default function SimpleList() {
         <Typography component="div" id="bottomContainer">
           <div className={classes.rootBottom}>
             <List component="nav" aria-label="main mailbox folders">
-
               <ListItem button className={classes.list}>
                 <div class="listContent">
                   <div className={classes.listHeader}>
@@ -326,7 +325,7 @@ export default function SimpleList() {
                     </div>   
                   </div>
                   <div className={classes.listDescribe}>
-                    Pierwsza moja aplikacja fullstack w całości zbudowana na bibliotece Django.
+                    My frist app fullstack based on framework Django. 
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/Loquest" className={classes.deleteUnderlining}>
@@ -343,7 +342,6 @@ export default function SimpleList() {
                     </a>
                   </div>
                 </div>
-
                 <div class="listPhoto">
                   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -384,9 +382,7 @@ export default function SimpleList() {
                     </a>
                   </div>
                 </div>
-
               </ListItem>
-
               <ListItem button className={classes.list}>
                 <div class="listContent">
                   <div className={classes.listHeader}>
@@ -401,7 +397,7 @@ export default function SimpleList() {
                     </div>   
                   </div>
                   <div className={classes.listDescribe}>
-                    Sklep internetowy z efektami gitarowymi.
+                    Online shop with unit effects.
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/Shop/tree/onlyDjango" className={classes.deleteUnderlining}>
@@ -447,7 +443,6 @@ export default function SimpleList() {
                   </div>
                 </div>
               </ListItem>
-
               <ListItem button className={classes.list}>
                 <div class="listContent">
                   <div className={classes.listHeader}>
@@ -461,9 +456,9 @@ export default function SimpleList() {
                     </div>   
                   </div>
                   <div className={classes.listDescribe}>
-                  W trakcie produkcji.
+                  In production.
                   <br/>
-                  Serwis dla programistów do poszukiwania pracy.<br/>
+                  Service for developer, who look a job.<br/>
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/FindDev" className={classes.deleteUnderlining}>
@@ -476,7 +471,6 @@ export default function SimpleList() {
                       View
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                     </Button>
-
                     <div class="modal fade bd-example-modal-lg" id="FinddevModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                       <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
@@ -490,21 +484,18 @@ export default function SimpleList() {
                           <div class="modal-body">
                               <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev11.png" alt="First slide"></img>
                           </div>
-
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">List</h5>
                           </div>
                           <div class="modal-body">
                               <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev22.png" alt="First slide"></img>
                           </div>
-
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Login</h5>
                           </div>
                           <div class="modal-body">
                               <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/dev33.png" alt="First slide"></img>
                           </div>
-
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Register</h5>
                           </div>
@@ -523,7 +514,6 @@ export default function SimpleList() {
                         </div>
                       </div>
                     </div>
-                    
                   </div>
                 </div>
                 <div class="listPhoto">
@@ -559,8 +549,6 @@ export default function SimpleList() {
                   </div>
                 </div>
               </ListItem>
-
-
               <ListItem button className={classes.list}>
                   <div class="listContent">
                     <div className={classes.listHeader}>
@@ -575,9 +563,9 @@ export default function SimpleList() {
                     </div>   
                   </div>
                   <div className={classes.listDescribe}>
-                    W trakcie produkcji. 
+                    In production.
                       <br/>
-                    Apliakacja do nauki jezyka angielskiego. <br/>
+                    Application to learn english.<br/>
                   </div>
                   <div className={classes.listButton}>
                     <a href="https://github.com/Hirq/Woradd" className={classes.deleteUnderlining}>
@@ -591,8 +579,6 @@ export default function SimpleList() {
                       <FaGgCircle className={classes.listButtonIconsElement}/>
                       </Button>
                   </div>
-
-                  
                   <div class="modal fade" id="WoraddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
@@ -605,36 +591,30 @@ export default function SimpleList() {
                           <div class="modal-body">
                               <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word11.png" alt="First slide"></img>
                           </div>
-
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Create note & Note List</h5>
                           </div>
                           <div class="modal-body">
                               <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word22.png" alt="First slide"></img>
                           </div>
-
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">View Note</h5>
                           </div>
                           <div class="modal-body">
                               <img class="d-block w-100" src="https://raw.githubusercontent.com/Hirq/portfolio/master/images/word33.png" alt="First slide"></img>
                           </div>
-
                           <div class="modal-header">
                             <h5 class="modal-title  w-100  text-center" id="exampleModalLabel">Purpose</h5>
                           </div>
                           <div class="modal-body">
                               <ul>
-                                <li>Set diffucult word</li>
-                                <li>Calendar history of using time</li>
+                                <li>Set - diffucult words</li>
+                                <li>Calendar - save progress</li>
                               </ul>
                           </div>
                       </div>
                     </div>
                   </div>
-
-
-
                 </div>
                 <div class="listPhoto">
                   <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
